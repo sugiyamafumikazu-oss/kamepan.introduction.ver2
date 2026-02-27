@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有限会社亀屋 会社案内</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap');
+        
+        body { 
+            font-family: 'Noto Sans JP', sans-serif; 
+            background-color: #e5e7eb; 
+            color: #292524; /* stone-800 */
+        }
+        .font-serif { font-family: 'Noto Serif JP', serif; }
+        
+        /* A4サイズの印刷用コンテナ */
+        .a4-print {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 2rem auto;
+            background: white;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            padding: 15mm 20mm;
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        /* 印刷時の設定 */
+        @media print {
+            body { background-color: white; margin: 0; }
+            .a4-print { 
+                width: 100%; 
+                min-height: 100%; 
+                margin: 0; 
+                padding: 10mm 15mm; 
+                box-shadow: none; 
+            }
+        }
+
+        /* 画像プレースホルダーのスタイル */
+        .img-placeholder {
+            background-color: #fff7ed; /* orange-50 */
+            color: #c2410c; /* orange-700 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 2px dashed #fdba74; /* orange-300 */
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="a4-print">
+        <!-- ヘッダー部分 -->
+        <header class="flex justify-between items-end border-b-2 border-orange-800 pb-4 mb-8">
+            <div>
+                <p class="text-orange-800 font-bold tracking-widest text-sm mb-1">SINCE 1952</p>
+                <h1 class="text-4xl font-serif font-bold text-stone-900 tracking-wider">有限会社亀屋</h1>
+            </div>
+            <div class="text-right text-sm text-stone-600">
+                <p>COMPANY PROFILE</p>
+                <p>会社案内</p>
+            </div>
+        </header>
+
+        <!-- メインビジュアル -->
+        <div class="w-full mb-10 shadow-sm rounded-lg overflow-hidden">
+            <img src="かめぱんトップ画面.png" alt="かめぱんの店舗と歴史" class="w-full h-auto object-cover">
+        </div>
+
+        <!-- 経営理念 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-serif font-bold text-orange-800 mb-6 text-center border-b border-orange-200 inline-block px-8 pb-2 relative left-1/2 -translate-x-1/2">
+                経営理念
+            </h2>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-orange-50 p-5 rounded-lg text-center border border-orange-100">
+                    <h3 class="font-bold text-orange-900 mb-3 text-lg font-serif">「美味しい」の笑顔のために</h3>
+                    <p class="text-sm leading-relaxed text-stone-700 text-left">常に最高の材料と技術で、お子様からご年配の方まで、皆様に安心・安全なパンを提供します。</p>
+                </div>
+                <div class="bg-orange-50 p-5 rounded-lg text-center border border-orange-100">
+                    <h3 class="font-bold text-orange-900 mb-3 text-lg font-serif">地域と共に歩む</h3>
+                    <p class="text-sm leading-relaxed text-stone-700 text-left">地元の皆様の食卓を彩り、下町の温かさを大切にしながら地域社会の活性化に貢献します。</p>
+                </div>
+                <div class="bg-orange-50 p-5 rounded-lg text-center border border-orange-100">
+                    <h3 class="font-bold text-orange-900 mb-3 text-lg font-serif">進化する老舗</h3>
+                    <p class="text-sm leading-relaxed text-stone-700 text-left">伝統の味を守りながらも、DXや新技術を積極的に取り入れ、従業員の幸福と企業の成長を追求します。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ご挨拶と写真 -->
+        <section class="mb-12 flex gap-8 items-start">
+            <div class="flex-1">
+                <h2 class="text-2xl font-serif font-bold text-orange-800 mb-4 border-l-4 border-orange-600 pl-3">ご挨拶</h2>
+                <div class="text-sm leading-loose text-stone-800">
+                    <p class="mb-4">
+                        昭和27年の創業以来、私たち有限会社亀屋は、下町・墨田区立花および江東区エリアの皆様に「焼きたての美味しさ」をお届けしてまいりました。
+                    </p>
+                    <p class="mb-4">
+                        「地域に愛されるパン屋」をモットーに、時代ごとのニーズに合わせた商品開発と、変わらぬ手作りの温かさを大切にしています。近年では、看板商品「明太マドンナ」をはじめとする惣菜パンが多くのメディアやSNSで話題となり、遠方からのお客様も増えております。
+                    </p>
+                    <p class="mb-6">
+                        この度、さらなる品質向上と安定供給、そして従業員が働きやすい環境づくりのため、最新設備の導入と生産体制の革新に取り組んでまいります。これからも皆様の食卓に笑顔をお届けできるよう、全社一丸となって邁進してまいります。
+                    </p>
+                    <p class="text-right font-serif font-bold text-lg">
+                        代表取締役　佐伯 信郎
+                    </p>
+                </div>
+            </div>
+            <div class="w-1/3 mt-2 flex flex-col gap-4">
+                <img src="明太マドンナ.png" alt="看板商品 明太マドンナ" class="w-full h-auto rounded-lg shadow-sm object-cover border border-stone-200">
+                <img src="カレー番長.png" alt="金賞受賞 カレー番長" class="w-full h-auto rounded-lg shadow-sm object-cover border border-stone-200">
+            </div>
+        </section>
+
+        <!-- 下部2カラム：会社概要と地域活動 -->
+        <div class="grid grid-cols-2 gap-8 mb-6">
+            <!-- 会社概要 -->
+            <section>
+                <h2 class="text-xl font-serif font-bold text-orange-800 mb-4 border-l-4 border-orange-600 pl-3">会社概要</h2>
+                <table class="w-full text-sm border-collapse">
+                    <tbody>
+                        <tr class="border-b border-stone-200">
+                            <th class="py-2 pr-4 text-left font-semibold text-stone-600 w-28 align-top">会社名</th>
+                            <td class="py-2 text-stone-800 align-top">有限会社亀屋</td>
+                        </tr>
+                        <tr class="border-b border-stone-200">
+                            <th class="py-2 pr-4 text-left font-semibold text-stone-600 align-top">代表者</th>
+                            <td class="py-2 text-stone-800 align-top">代表取締役 佐伯 信郎</td>
+                        </tr>
+                        <tr class="border-b border-stone-200">
+                            <th class="py-2 pr-4 text-left font-semibold text-stone-600 align-top">本社所在地</th>
+                            <td class="py-2 text-stone-800 align-top">〒131-0043<br>東京都墨田区立花2-1-11</td>
+                        </tr>
+                        <tr class="border-b border-stone-200">
+                            <th class="py-2 pr-4 text-left font-semibold text-stone-600 align-top">店舗・工場</th>
+                            <td class="py-2 text-stone-800 align-top leading-relaxed">
+                                ・かめぱん 立花店 (本店・工場)<br>
+                                ・かめぱん 向島店<br>
+                                ・かめぱんカフェ<br>
+                                ・新セントラルキッチン ※整備予定
+                            </td>
+                        </tr>
+                        <tr class="border-b border-stone-200">
+                            <th class="py-2 pr-4 text-left font-semibold text-stone-600 align-top">創業</th>
+                            <td class="py-2 text-stone-800 align-top">昭和27年 (1952年)</td>
+                        </tr>
+                        <tr class="border-b border-stone-200">
+                            <th class="py-2 pr-4 text-left font-semibold text-stone-600 align-top">資本金</th>
+                            <td class="py-2 text-stone-800 align-top">300万円</td>
+                        </tr>
+                        <tr class="border-b border-stone-200">
+                            <th class="py-2 pr-4 text-left font-semibold text-stone-600 align-top">従業員数</th>
+                            <td class="py-2 text-stone-800 align-top">148名 (パート・アルバイト含む)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 地域活動・役職 -->
+            <section>
+                <h2 class="text-xl font-serif font-bold text-orange-800 mb-4 border-l-4 border-orange-600 pl-3">地域活動・各種役職</h2>
+                <p class="text-xs text-stone-600 mb-3 leading-relaxed">
+                    地域との強固な結びつきを大切にしており、代表の佐伯は以下の役職を務め、地域社会や業界の発展に尽力しております。
+                </p>
+                <ul class="text-sm text-stone-800 space-y-2 bg-stone-50 p-4 rounded-lg border border-stone-100">
+                    <li class="flex items-center"><span class="text-orange-600 mr-2">■</span>墨田区パン洋菓子組合 組合長</li>
+                    <li class="flex items-center"><span class="text-orange-600 mr-2">■</span>すみだ食育goodネット 常務理事</li>
+                    <li class="flex items-center"><span class="text-orange-600 mr-2">■</span>墨田区銘品名店会 理事</li>
+                    <li class="flex items-center"><span class="text-orange-600 mr-2">■</span>東あづま本通り会（商店街） 会長</li>
+                    <li class="flex items-center"><span class="text-orange-600 mr-2">■</span>墨田区商店街連合会 副会長</li>
+                    <li class="flex items-center"><span class="text-orange-600 mr-2">■</span>墨田区食品衛生協会 副会長</li>
+                    <li class="flex items-center"><span class="text-orange-600 mr-2">■</span>東京商工会議所墨田支部 小売商業分科会長</li>
+                    <li class="flex items-center"><span class="text-orange-600 mr-2">■</span>東京都パン商工組合 理事</li>
+                    <li class="flex items-center"><span class="text-orange-600 mr-2">■</span>日本リアルベーカリー協会 理事</li>
+                </ul>
+                
+                <div class="img-placeholder w-full h-24 mt-4 rounded-lg shadow-sm">
+                    
+                </div>
+            </section>
+        </div>
+        
+        <!-- フッター -->
+        <footer class="mt-8 pt-4 border-t border-stone-300 text-center text-xs text-stone-500">
+            <p>&copy; KAMEYA Co., Ltd. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
